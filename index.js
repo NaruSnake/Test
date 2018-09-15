@@ -48,7 +48,7 @@ client.on("message", (message) => {
 
         } catch (err) {
             message.delete();
-            message.channel.send(" essaye de faire des commande qui existe BAKA")
+            message.channel.send(" essaye de faire des commandes qui existe BAKA")
             console.error(err);
             console.log
         }
