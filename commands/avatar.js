@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
     message.delete();
     var mentionned = message.mentions.users.first();
     var autheur;
-    var user = message.author;
+    var user = message.author.username;
 
     if(mentionned){
         var autheur = mentionned;
