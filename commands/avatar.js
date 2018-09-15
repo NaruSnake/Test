@@ -1,6 +1,7 @@
 //command avatar //
 
 exports.run = (client, message, args) => {
+    message.deleted();
     var mentionned = message.mentions.users.first();
     var autheur;
 
@@ -13,7 +14,6 @@ exports.run = (client, message, args) => {
     var newAvatar = autheur.avatarURL;
 
     if(newAvatar.includes(" .gif")){
-        message.deleted();
         message.channel.send("", {
             embed:{
                 title:"Voici l'avatar de " + autheur.username,
@@ -24,7 +24,6 @@ exports.run = (client, message, args) => {
             }
         })
     } else {
-        message.deleted();
         message.channel.send("", {
             embed:{
                 title: "Voici l'avatar de " + autheur.username,
