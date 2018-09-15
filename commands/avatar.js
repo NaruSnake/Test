@@ -19,7 +19,7 @@ exports.run = (client, message, args) => {
         message.channel.send("", {
             embed:{
                 image:{
-                    url: autheur.avatarURL.slice(0,autheur.avatarURL.lastIndexOf('?size='))
+                    url: autheur.avatarURL.slice(0,autheur.avatarURL.lastIndexOf())
                 },
                 color: 0x00ffff
             }
