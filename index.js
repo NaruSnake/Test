@@ -8,7 +8,7 @@ client.on("ready", () => {
 
 	var memberCount = client.users.size;
 	var serverCount = client.guilds.size;
-		client.user.setGame("à être une expérience");
+		client.user.setGame("être une expérience");
 		client.user.setStatus("online");
 	console.log("Je suis Online");
 	console.log("Utilisateurs: " + memberCount + "\nServeurs: " + serverCount);
@@ -47,6 +47,7 @@ client.on("message", (message) => {
         console.log
 
         } catch (err) {
+            message.channel.send(" essaye de faire des commande qui existe BAKA")
             console.error(err);
             console.log
         }
