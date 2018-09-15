@@ -14,9 +14,9 @@ exports.run = (client, message, args) => {
     var newAvatar = autheur.avatarURL;
 
     if(newAvatar.includes(" .gif")){
+        message.channel.send(` ${author} tu as demandé l'avatar de ` + autheur.username,)
         message.channel.send("", {
             embed:{
-                title:" ${user} tu as demandé l'avatar de " + autheur.username,
                 image:{
                     url: autheur.avatarURL.slice(0,autheur.avatarURL.lastIndexOf('?size='))
                 },
@@ -26,7 +26,7 @@ exports.run = (client, message, args) => {
     } else {
         message.channel.send("", {
             embed:{
-                title: " ${user} tu as demandé l'avatar de " + autheur.username,
+                title: ` ${user} tu as demandé l'avatar de ` + autheur.username,
                 image: {
                     url: autheur.avatarURL
                 },
