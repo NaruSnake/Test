@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
     message.delete();
     var mentionned = message.mentions.users.first();
     var autheur;
-    var author = member;
+    var user = message.author;
 
     if(mentionned){
         var autheur = mentionned;
@@ -15,7 +15,7 @@ exports.run = (client, message, args) => {
     var newAvatar = autheur.avatarURL;
 
     if(newAvatar.includes(" .gif")){
-        message.channel.send(` ${author} tu as demandé l'avatar de ` + autheur.username,)
+        message.channel.send(` ${user} tu as demandé l'avatar de ` + autheur.username,)
         message.channel.send("", {
             embed:{
                 image:{
@@ -27,7 +27,7 @@ exports.run = (client, message, args) => {
     } else {
         message.channel.send("", {
             embed:{
-                title: ` ${author} tu as demandé l'avatar de ` + autheur.username,
+                title: ` ${user} tu as demandé l'avatar de ` + autheur.username,
                 image: {
                     url: autheur.avatarURL
                 },
