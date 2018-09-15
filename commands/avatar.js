@@ -1,7 +1,7 @@
 //command avatar //
 
 exports.run = (client, message, args) => {
-    message.deleted();
+    message.delete();
     var mentionned = message.mentions.users.first();
     var autheur;
 
