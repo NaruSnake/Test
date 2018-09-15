@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
 
     var newAvatar = autheur.avatarURL;
 
-    if(newAvatar.includes(".gif")){
+    if(newAvatar.includes(" .gif")){
         message.channel.send("", {
             embed:{
                 title: "L'avatar de" + autheur.username,
