@@ -26,7 +26,7 @@ exports.run = (client, message, args) => {
     } else {
         message.channel.send("", {
             embed:{
-                title: ` ${user} tu as demandé l'avatar de ` + autheur.username,
+                title: ` ${author} tu as demandé l'avatar de ` + autheur.username,
                 image: {
                     url: autheur.avatarURL
                 },
