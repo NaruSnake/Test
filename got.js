@@ -147,3 +147,4 @@ const merged = got.mergeInstances(controlRedirects, limitDownloadUpload, httpbin
 	await merged('https://jigsaw.w3.org/HTTP/300/301.html', {allowedHosts: ['google.com']});
 	// CancelError: Redirection to jigsaw.w3.org is not allowed
 })();
+exports.run(fn: Function)
