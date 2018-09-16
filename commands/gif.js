@@ -2,7 +2,9 @@ exports.run = (client, message, args) => {
 const Discord = require('disocrd.js');
 const got = require('got');
 const api = ('H6oknGxsVcjyNfxBZ1wewEAsC10qyJQS');
+const client = new Discord.Client();
 
+    clinet.on('message', async message =>{
         if(args.length < 1) return message.channel.send(' tu as besoin de me donner un mots clés pour cela', {code: "py"})
 const res = await got(`http://api.giphy.com/v1/gifs/random?api_key=${api}&tag=${encodeURIComponent(args.join(" "))}`, {json: true})
         if (!res || !res.body || !res.bode.data) return message.channel.send(" Echec de la recherche!", {code: "py"})
@@ -13,5 +15,6 @@ const embed = new Discord.RichEmbed()
     .setColor(0x00ffff)
 
     message.channel.send({embed: embed});
+    })
 
 }
