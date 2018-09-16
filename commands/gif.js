@@ -1,5 +1,4 @@
 exports.run = (client, message, args) => {
-const got = require('got');
 const api = ('H6oknGxsVcjyNfxBZ1wewEAsC10qyJQS');
 
 
