@@ -1,5 +1,4 @@
 exports.run = (client, message, args) => {
-const Discord = require('disocrd.js');
 const got = require('got');
 const api = ('H6oknGxsVcjyNfxBZ1wewEAsC10qyJQS');
 
