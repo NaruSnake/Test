@@ -29,7 +29,7 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 
-client.on("message", (message) => {
+client.on("message", async (message) => {
     console.log
     if (message.author.bot) return;
     console.log
