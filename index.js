@@ -68,8 +68,9 @@ client.on("guildMemberRemove", member => {
 });
 
 // réaction émote //
+const joy = client.emojis.get("493078719762661426");
 const responseObject = {
-    "😥": "il est content il rigole pour rien -_-'"
+    "joy": "il est content il rigole pour rien -_-'"
 };
 
 client.on("message", (message) => {
