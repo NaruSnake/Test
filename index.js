@@ -71,7 +71,8 @@ client.on("guildMemberRemove", member => {
 const joy = client.emojis.get("493078719762661426");
 
 client.on("message", (message) => {
-    if(message.content === `:joy:`) {
+const joy = client.emojis.find("name", "joy");
+    if(message.content === `joy`) {
         message.reply("il est content il rigole pour rien bravo");
     };
 });
