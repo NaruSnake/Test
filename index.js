@@ -65,5 +65,13 @@ client.on("guildMemberRemove", member => {
     member.guild.channels.find("name", "bienvenue").send(`Dommage ${member} est parti, il va me manquer... Ou pas. Tu veux mon avis ? Je le trouvais moche.`)
 });
 
+// réaction émote //
+
+if(client, message, args => {
+    if(member.message.channel.send(":joy:"));
+    message.channel.send("il a dit ca connerie il est content")
+
+})
+
 
 client.login(token);
