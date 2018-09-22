@@ -67,11 +67,11 @@ client.on("guildMemberRemove", member => {
 
 // réaction émote //
 
-if(client, message => {
+client.on(message => {
     if(member.message.channel.send(":joy:"));
-    message.channel.send("il a dit ca connerie il est content")
+    message.channel.send("il a dit ca connerie il est content");
 
-})
+});
 
 
 client.login(token);
