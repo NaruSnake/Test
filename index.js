@@ -69,14 +69,9 @@ client.on("guildMemberRemove", member => {
 
 // réaction émote //
 const joy = client.emojis.get("493078719762661426");
-const responseObject = {
-    "joy": "il est content il rigole pour rien -_-'"
-};
 
-client.on("message", (message) => {
-    if(responseObject[message.content]) {
-        message.channel.send(responseObject[message.content]);
-    }
-});
+    if(message.content === `${joy}`) {
+        message.reply("il est content il rigole pour rien bravo");
+    };
 
 client.login(token);
