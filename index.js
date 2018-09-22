@@ -55,9 +55,8 @@ client.on("message", (message) => {
 
     // réaction émote //
         // :joy: //
-    if(message.content === "joy") {
-        const joy = client.emojis.find("name", "joy");
-        message.reply(` il est content il rigole pour rien`);
+    if(message.content === ":joy:") {
+        message.channel.send(` il est content il rigole pour rien`);
     }
 });
 
