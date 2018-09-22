@@ -53,7 +53,15 @@ client.on("message", (message) => {
             console.log
         }
 
-    });
+    // réaction émote //
+        // :joy: //
+    if(message.content(":joy:")) {
+        message.channel.send("c'est ça rigole d'un truc pas drole continue")
+    }
+});
+
+
+  
 
 //bienvenue et départ//
 
@@ -64,17 +72,5 @@ client.on("guildMemberAdd", member => {
 client.on("guildMemberRemove", member => {
     member.guild.channels.find("name", "bienvenue").send(`Dommage ${member} est parti, il va me manquer... Ou pas. Tu veux mon avis ? Je le trouvais moche.`)
 });
-
-// réaction émote //
-    // :joy: //
-if("message", message => {
-        message.channel.author.content.find(':joy:');
-        message.channel.send("il a dit sa connerie il est content");
-});
-
-    
-
-
-
 
 client.login(token);
