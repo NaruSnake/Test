@@ -69,7 +69,7 @@ client.on("guildMemberRemove", member => {
 
 // réaction émote //
 const responseObject = {
-    `:joy:`: "il est content il rigole pour rien -_-'"
+    `😥`: "il est content il rigole pour rien -_-'"
 };
 
 client.on("message", (message) => {
