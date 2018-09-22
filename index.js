@@ -55,7 +55,7 @@ client.on("message", (message) => {
 
     // réaction émote //
         // :joy: //
-    if(message.content(":joy:")) {
+    if(message.channel.content(":joy:")) {
         message.channel.send("c'est ça rigole d'un truc pas drole continue")
     }
 });
