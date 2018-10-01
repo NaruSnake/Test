@@ -35,7 +35,7 @@ fs.readdir("./bowsette/", (err, files) => {
     console.log
     files.forEach(file => {
         console.log
-        let eventFunction = require(`./ussless/${file}`);
+        let eventFunction = require(`./bowsette/${file}`);
         console.log
         let eventName = file.split(".")[0];
         console.log
