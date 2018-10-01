@@ -54,6 +54,7 @@ client.on("message", (message) => {
     
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
+   
     // dossier commands//
     try { 
         console.log
@@ -63,8 +64,6 @@ client.on("message", (message) => {
         console.log
 
         } catch (err) {
-            message.delete();
-            message.channel.send(" essaye de faire des commandes qui existe BAKA")
             console.error(err);
             console.log
         }
@@ -79,8 +78,6 @@ client.on("message", (message) => {
         console.log
         
         } catch (err) {
-            message.delete();
-            message.channel.send(" essaye de faire des commandes qui existe BAKA")
             console.error(err);
             console.log
         }
