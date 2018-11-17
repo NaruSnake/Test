@@ -29,20 +29,6 @@ fs.readdir("./commands/", (err, files) => {
     });
 });
 
- // dossier bowsette //
-fs.readdir("./bowsette/", (err, files) => {
-    if (err) return console.error(err);
-    console.log
-    files.forEach(file => {
-        console.log
-        let eventFunction = require(`./bowsette/${file}`);
-        console.log
-        let eventName = file.split(".")[0];
-        console.log
-        client.on(eventName, (...args) => eventFunction.run(client, ...args));
-        console.log
-    });
-});
 
 
 client.on("message", (message) => {
@@ -67,23 +53,7 @@ client.on("message", (message) => {
             console.error(err);
             console.log
         }
-    
-
-    // dossier bowsette//
-    try { 
-        console.log
-        let commandFile = require(`./bowsette/${command}.js`);
-        console.log
-        commandFile.run(client, message, args);
-        console.log
-        
-        } catch (err) {
-            console.error(err);
-            console.log
-        }
-    
-
-
+  
 });
 
 
