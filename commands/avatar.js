@@ -21,7 +21,7 @@ exports.run = (client, message, args) => {
                 image:{
                     url: autheur.avatarURL.slice(0,autheur.avatarURL.lastIndexOf('?size='))
                 },
-                color: 0x00FE00
+                color: 0x00ffff
             }
         })
     } else {
@@ -31,7 +31,7 @@ exports.run = (client, message, args) => {
                 image: {
                     url: autheur.avatarURL
                 },
-                color: 0x00FE00
+                color: 0x00ffff
             }
         })
     }
